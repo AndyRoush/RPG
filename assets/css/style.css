@@ -1,0 +1,132 @@
+@font-face {
+  font-family: '8bit'; /*a name to be used later*/
+  src: url('../fonts/PressStart2p.ttf'); /*URL to font*/
+}
+
+#mainSpace {
+  margin: 20px auto 160px auto;
+}
+
+#charSelectMessage {
+  color: #c0392b;
+  font-size: 25px;
+}
+
+#charactersSpace {
+  margin-top: 20px;
+  height: 100px;
+}
+
+#characterSelect,
+#charactersSpace {
+  font-family: '8bit';
+  font-size: 14px;
+  line-height: 35px;
+}
+
+#characterOne,
+#characterTwo {
+  color: #c0af2b;
+  background-color: #3368b770;
+  border-radius: 6px;
+  padding: 18px;
+  border: 2px solid #34495e;
+}
+
+#userChar,
+#enemyChar {
+  color: #c0392b;
+  background-color: #3368b770;
+  border-radius: 6px;
+  padding: 18px;
+  border: 2px solid #34495e;
+}
+
+.health {
+  color: #c0392b;
+  background-color: #3368b770;
+  border-radius: 6px;
+  padding: 18px;
+  border: 2px solid #34495e;
+}
+
+#logo {
+  width: 350px;
+}
+
+#battleFeedback {
+  overflow: hidden;
+  color: #c0392b;
+  background-color: #3368b770;
+  border-radius: 6px;
+  padding: 20px;
+  height: 165px;
+  border: 2px solid #34495e;
+  font-size: 25px;
+}
+
+.characterPic {
+  margin-bottom: 15px;
+}
+
+.hightlightChar {
+  color: #c0392b;
+  border: solid 5px #f1c40f !important;
+}
+
+#healthBars {
+  margin: 20px 0;
+}
+
+.instructions {
+  color: #c0392b;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+body {
+  font-size: 19px;
+  font-family: '8bit';
+  background-image: url('../images/mmwpr.jpg');
+  height: 100%;
+  width: 100%; 
+}
+
+.characterButtons {
+  margin-top: 15px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+#attack {
+  width: 100%;
+}
+
+.attbutton {
+  padding: 0;
+}
+
+/* ***** SPRITES ANIMATION *****
+http://blog.teamtreehouse.com/css-sprite-sheet-animations-steps
+https://www.kirupa.com/html5/sprite_sheet_animations_using_only_css.htm
+ /* /*SPIRTE GAMES */
+  /* http://spritedatabase.net/game/1591 */
+  /* http://spritedatabase.net/game/20 */
+ /*  */
+/*  */
+  /* #userChar {  */
+    /* height: 500px; */
+    /* display: block; */
+    /* width: 390px; */
+    /* background-image: url('../images/test.png'); */
+    /* background-repeat: no-repeat; */
+    /* animation: play 0.55s steps(4) infinite; */
+  /* } */
+/*  */
+  /* @keyframes play { */
+     /* 100% { background-position: -3140px; } */
+  /* }  */ 
