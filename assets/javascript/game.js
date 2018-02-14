@@ -3,7 +3,7 @@ $(document).ready(function() {
     var characterSelected = "characterOne";
     var userMadeSelection = false;
     var characterStartHP = characterSelected["start health"];
-    $("#playerStartHP").html(characterStartHP); // sets player's start HP
+    $("#playerStartHP").html(characterStartHP); // This sets player's start HP
     var characterAlive = true;
     function characterShake(character) {
         $(character).effect("shake");
@@ -107,10 +107,9 @@ $(document).ready(function() {
     var enemyCount = 0
     var enemyArray = [enemyOne, enemyTwo, enemyThree];
     var currentEnemy = enemyArray[enemyCount];
-    var enemyStartHP = currentEnemy["start health"]; // sets enemy's start HP
+    var enemyStartHP = currentEnemy["start health"]; // sets the enemy's start HP
 
 
-    // NEED TO OVERHAUL CONDITIONALS
     function displayCharacterStats(character, area) {
         var size = Object.keys(character.stats).length;
         $(area).html('<div class="characterPic"><img src="' + character.image + '"></div>');
@@ -135,7 +134,7 @@ $(document).ready(function() {
         }
     }
 
-    // switches enemy
+    // this function switches the enemy
     function nextEnemy() {
         $(".enemyStats").remove();
         enemyCount++;
@@ -172,8 +171,6 @@ $(document).ready(function() {
         $("#characterOne").on("click", function() {
             $("#characterOne").attr("class", "hightlightChar col-lg-3");
             $("#characterTwo").attr("class", "col-lg-3 col-lg-6");
-            // need to make more specific
-            // might be too "crude" of a solution for highlighting only one character
             userMadeSelection = true;
             characterSelected = characterOne;
             characterStartHP = characterSelected["start health"];
@@ -219,7 +216,6 @@ $(document).ready(function() {
             characterShake("#userChar");
             $("#battleFeedback").html("You have been defeated!");
             characterDefeated();
-            // add a reset feature after player has been defeated/lost
           } else {
             player.stats["base health"] -= damage;
             $("#userHealth").attr("style", "width: " + player.stats["base health"] + "%");
@@ -238,7 +234,7 @@ $(document).ready(function() {
     function basicAttack(enemy, player) {
         var damage = player.stats["base attack"];
         roll = Math.floor(Math.random() * player.stats["base accuracy"]);
-        // algorithm to determine if ability hit??
+        // determine if ability hit
         console.log("Roll: " + roll);
         if (roll > 40) {
             if ((enemy.stats["base health"] - damage) <= 0) {
@@ -246,7 +242,7 @@ $(document).ready(function() {
                 $("#enemyCurrentHP").html(enemy.stats["base health"]);
                 $("#enemyHealth").attr("style", "width: 0%");
                 characterShake("#enemyChar");
-                $("#battleFeedback").html("<div>Enemy was defeated!</div>");
+                $("#battleFeedback").html("<div>Your enemy was defeated!</div>");
                 nextEnemy();
             } else {
                 enemy.stats["base health"] -= damage;
@@ -265,8 +261,6 @@ $(document).ready(function() {
         // AFTER ENEMY[0] IS DEFEATED, SHIFT ENEMY[0] from ARRAY and ENEMY[1] === now ENEMY[0] is new enemy
     }
 
-
-    // add an IF CONDITIONAL
 
     $("#attack").on("click", function() {
         basicAttack(currentEnemy, characterSelected);

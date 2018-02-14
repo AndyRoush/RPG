@@ -1,6 +1,6 @@
 @font-face {
-  font-family: '8bit'; /*a name to be used later*/
-  src: url('../fonts/PressStart2p.ttf'); /*URL to font*/
+  font-family: '8bit'; 
+  src: url('../fonts/PressStart2p.ttf'); /*The sickest video game font*/
 }
 
 #mainSpace {
@@ -109,24 +109,3 @@ h4 {
 .attbutton {
   padding: 0;
 }
-
-/* ***** SPRITES ANIMATION *****
-http://blog.teamtreehouse.com/css-sprite-sheet-animations-steps
-https://www.kirupa.com/html5/sprite_sheet_animations_using_only_css.htm
- /* /*SPIRTE GAMES */
-  /* http://spritedatabase.net/game/1591 */
-  /* http://spritedatabase.net/game/20 */
- /*  */
-/*  */
-  /* #userChar {  */
-    /* height: 500px; */
-    /* display: block; */
-    /* width: 390px; */
-    /* background-image: url('../images/test.png'); */
-    /* background-repeat: no-repeat; */
-    /* animation: play 0.55s steps(4) infinite; */
-  /* } */
-/*  */
-  /* @keyframes play { */
-     /* 100% { background-position: -3140px; } */
-  /* }  */ 
