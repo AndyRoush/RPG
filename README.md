@@ -3,6 +3,8 @@
 <h3>jQuery Assignment</h3>
 <h5>Mega-Man themed. Card graphics designed by me using photoshop.</h5>
 
+<img src="rimages/rpg1.PNG" width="900">
+
 
 Overview
 
