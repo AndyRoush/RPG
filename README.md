@@ -6,12 +6,12 @@
 <img src="rimages/rpg1.PNG" width="900">
 
 
-Overview
+<h3>Overview</h3>
 
 In this assignment, you'll create another fun and interactive game for web browsers. This time, your app must dynamically update your HTML pages with the jQuery library.
 
 
-Before You Begin
+<h3>Before You Begin</h3>
 
 
 Create a new GitHub repo called week-4-game, then clone it to your computer.
@@ -22,13 +22,14 @@ Still inside the week-4-game directory, make a folder called assets.
 
 Inside the assets directory, make three additional folders: javascript, css and images.
 
+<ul>
+<li>In the javascript folder, make a file called game.js.</li>
+<li>In the css folder, make a file called style.css.</li>
+<li>In the css folder, make a file called reset.css. Paste into it the code found from the Meyerweb Reset.</uli>
+<li>In the images folder, save any of the images you plan on using.</li>
+</ul>
 
-In the javascript folder, make a file called game.js.
-In the css folder, make a file called style.css.
-In the css folder, make a file called reset.css. Paste into it the code found from the Meyerweb Reset.
-In the images folder, save any of the images you plan on using.
-
-Here's how the app works:
+<h2>Here's how the app works:</h2>
 
 
 
@@ -59,7 +60,7 @@ The player wins the game by defeating all enemy characters. The player loses the
 
 
 
-Option 2 Game design notes
+<h3>Option 2 Game design notes</h3>
 
 
 Each character in the game has 3 attributes: Health Points, Attack Power and Counter Attack Power.
